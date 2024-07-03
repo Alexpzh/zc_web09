@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Регистрация</h1>
+    <h1 class="vintage-title">Регистрация</h1>
     <form method="post" action="{{ url_for('register')}}">
         {{ form.hidden_tag() }}
-        <div>
+        <div class="text-center vintage-container">
             {{ form.username.label }}
             {{ form.username }}
         </div>
-        <div>
+        <div class="text-center vintage-container">
             {{ form.password.label }}
             {{ form.password }}
         </div>
-        <div>
+        <div class="text-center vintage-container">
             {{ form.confirm_password.label }}
             {{ form.confirm_password }}
         </div>
-        <div>
+        <div class="text-center vintage-container">
             {{ form.submit }}
         </div>
     </form>

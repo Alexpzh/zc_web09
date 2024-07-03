@@ -3,15 +3,15 @@
     <h1>Вход</h1>
     <form method="post" action="{{ url_for('login')}}">
         {{ form.hidden_tag() }}
-        <div>
+        <div class="text-center vintage-container">
             {{ form.username.label }}
             {{ form.username }}
         </div>
-        <div>
+        <div class="text-center vintage-container">
             {{ form.password.label }}
             {{ form.password }}
         </div>
-        <div>
+        <div class="text-center vintage-container">
             {{ form.submit }}
         </div>
     </form>
